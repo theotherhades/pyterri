@@ -26,3 +26,17 @@ def getClans(limit: int = None):
         out.append(clans[clan_index])
 
     return out
+
+def getClan(clan: str):
+    """
+    Get data for the provided clan
+    """
+    clan = clan.upper()
+    all_clans = getClans()
+
+    for i in all_clans:
+        if i["clan"] == clan:
+            return i
+    
+    else:
+        raise IndexError(clan)

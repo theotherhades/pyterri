@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name = "pyterri",
-    version = "1.1.2",
+    version = "0.1.0",
     description = "A simple python package for getting territorial.io player and clan data",
     long_description = long_description,
     long_description_content_type = "text/markdown",
